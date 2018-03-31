@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 nadya = LINETCR.LINE()
 #nadya.login(qr=True)
-nadya.login(token='EqWLiFgJAwUN3eQ8Vw38.yAM1ZO3J61gOwuemMdtLYa.8WEzeucCRWyNxIchnYSD2bi+TAURjF17NFHouJUEPts=')
+nadya.login(token='EroQ9hg1ik0K6WFvWxie.RuNwLaSi3A4Qug5AGIWQRG.DwREvZaM14SPupQpWhUC2WjBWdaycb//jcrQ/47Q5ew=')
 nadya.loginResult()
 print "Nadya-Login Success\n\n=====[Sukses Login]====="
 
@@ -22,7 +22,7 @@ sys.setdefaultencoding('utf-8')
 
 selfMessage ="""
 ╔═════════════════════════
-║            ☆☞ S E L F ☜☆
+║            ☆☞ A C H O ☜☆
 ╠═════════════════════════
 ╠➩〘Hi〙
 ╠➩〘Me〙
@@ -56,7 +56,7 @@ selfMessage ="""
 
 botMessage ="""
 ╔═════════════════════════
-║             ☆☞ B O T ☜☆
+║             ☆☞ A C H O ☜☆
 ╠═════════════════════════
 ╠➩〘Absen〙
 ╠➩〘Respon〙
@@ -76,7 +76,7 @@ botMessage ="""
 
 mediaMessage ="""
 ╔═════════════════════════
-║           ☆☞ M E D I A ☜☆
+║           ☆☞ A C H O ☜☆
 ╠═════════════════════════
 ╠➩〘Gift〙
 ╠➩〘Gift1 @ s/d Gift10 @〙
@@ -117,7 +117,7 @@ mediaMessage ="""
 
 groupMessage ="""
 ╔═════════════════════════
-║           ☆☞ G R O U P ☜☆
+║           ☆☞ A C H O ☜☆
 ╠═════════════════════════
 ╠➩〘Welcome〙
 ╠➩〘Say welcome〙
@@ -151,7 +151,7 @@ tjia="u61a9b5ce8de3eb51a859410c9834e5c8"
 
 setMessage ="""
 ╔═════════════════════════
-║              ☆☞ S E T ☜☆
+║              ☆☞ A C H O ☜☆
 ╠═════════════════════════
 ╠➩〘Sambutan on/off〙
 ╠➩〘Mimic on/off〙
@@ -169,7 +169,7 @@ setMessage ="""
 
 creatorMessage ="""
 ╔═════════════════════════
-║         ☆☞ C R E A T O R ☜☆
+║         ☆☞ A C H O ☜☆
 ╠═════════════════════════
 ╠➩〘Crash〙
 ╠➩〘Kickall〙
@@ -188,7 +188,7 @@ creatorMessage ="""
 
 adminMessage ="""
 ╔═════════════════════════
-║            ☆☞ A D M I N ☜☆
+║            ☆☞ A C H O ☜☆
 ╠═════════════════════════
 ╠➩〘Allprotect on/off〙
 ╠➩〘Ban〙
@@ -229,7 +229,7 @@ adminMessage ="""
 
 helpMessage ="""
 ╔═════════════════════════
-║              ☆☞ H E L P ☜☆
+║              ☆☞ A C H O ☜☆
 ╠═════════════════════════
 ╠➩〘Help self〙
 ╠➩〘Help bot〙
@@ -253,8 +253,8 @@ helpMessage ="""
 KAC=[nadya]
 mid = nadya.getProfile().mid
 Bots=[mid]
-Creator=["u61a9b5ce8de3eb51a859410c9834e5c8"]
-admin=["u61a9b5ce8de3eb51a859410c9834e5c8"]
+Creator=["uad49d6940b08ddae2a506e5a822c2aae"]
+admin=["uad49d6940b08ddae2a506e5a822c2aae"]
 
 contact = nadya.getProfile()
 backup1 = nadya.getProfile()
@@ -575,15 +575,15 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgintip Aja Niih. . .\nNtar bintitan matanya😂   ")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                     else:
-                                        nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                        nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nMasuk sini\nKita ngeGosip pak joko widodo   ")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                 else:
-                                    nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nsini kak\ntemanin aku ngobrol😂   ")
                                     time.sleep(0.2)
                                     summon(op.param1,[op.param2])
                         else:
@@ -792,7 +792,7 @@ def bot(op):
             ginfo = nadya.getGroup(op.param1)
             contact = nadya.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            nadya.sendText(op.param1,"Hallo " + nadya.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
+            nadya.sendText(op.param1,"Hai kk " + nadya.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nSalken yah\n Semoga Betah Disini by.Acho")
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             nadya.sendMessage(c)  
@@ -809,7 +809,7 @@ def bot(op):
           if wait["Sambutan"] == True:
             if op.param2 in Creator:
                 return
-            nadya.sendText(op.param1,"Good Bye " + nadya.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
+            nadya.sendText(op.param1,"Dadah kk " + nadya.getContact(op.param2).displayName +  "\nkalau ketemu lagi, aku tikung yah😂😂")
             d = Message(to=op.param1, from_=None, text=None, contentType=7)
             d.contentMetadata={
                                     "STKID": "13269542",
@@ -857,7 +857,7 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = nadya.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Dia Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                     balas = ["cie, yg tag aim.. Pasti naksir😅",cName + " kalau mau nikung, pm aja yah😂😂😂",cName + " yang tag aim, pasti belum mandi😛","aih, org ganteng, ditag mulu🙄", cName + " kaka mau nikung aku yah??🙄","kalau mau didesahin\npm aja kak😂 " + cName, "maaf, lagi meeting sama Obama??🙄 " + cName, "yang tag gue, pasti minta di kawinin😂😂😂 " + cName + "😘😘😘", "yang tag gue, pasti minta ditikung😰" + cName + "😰","sekali lagi tag." + cName + " sumpah, gue tikung, kapok lu 🙄🙄"]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -871,7 +871,7 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = nadya.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                    balas = ["tag mulu, ntar tak desahin, kapok lu","jangan tag cipok aja kk😆","jangan tag " + cName + " kalau ga mau dikawinin😜"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -892,8 +892,8 @@ def bot(op):
                  if wait["detectMention3"] == True:          
                     contact = nadya.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Woii " + cName + ", Dasar Jones Ngetag Mulu!"]
-                    balas1 = "Ini Foto Sii Jones Yang Suka Ngetag. . ."
+                    balas = ["Cie,, " + cName + ", ada Fans gue rupanya😂"]
+                    balas1 = "Ini dia Foto nya🤔"
                     ret_ = random.choice(balas)
                     image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
                     name = re.findall(r'@(\w+)', msg.text)
